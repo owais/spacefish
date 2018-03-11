@@ -227,6 +227,19 @@
     
         <li class="chapter " data-level="1.2.6" data-path="Options.html">
             
+                <a href="Options.html#nodejs-node">
+            
+                    
+                    Node (node)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="Options.html">
+            
                 <a href="Options.html#execution-time-exec_time">
             
                     
@@ -238,7 +251,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.7" data-path="Options.html">
+        <li class="chapter " data-level="1.2.8" data-path="Options.html">
             
                 <a href="Options.html#battery-battery">
             
@@ -587,6 +600,50 @@
 </tr>
 </tbody>
 </table>
+<h3 id="nodejs-node">Node.js (<code>node</code>)</h3>
+<p>Node.js section is shown only in directories that contain <code>package.json</code> file, or <code>node_modules</code> folder, or any other file with <code>.js</code> extension.</p>
+<p>If you set <code>SPACEFISH_NODE_DEFAULT_VERSION</code> to the default Node.js version and your current version is the same as <code>SPACEFISH_NODE_DEFAULT_VERSION</code>, then Node.js section will be hidden.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Variable</th>
+<th style="text-align:center">Default</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>SPACEFISH_NODE_SHOW</code></td>
+<td style="text-align:center"><code>true</code></td>
+<td>Current Node.js section</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>SPACEFISH_NODE_PREFIX</code></td>
+<td style="text-align:center"><code>$SPACEFISH_PROMPT_DEFAULT_PREFIX</code></td>
+<td>Prefix before Node.js section</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>SPACEFISH_NODE_SUFFIX</code></td>
+<td style="text-align:center"><code>$SPACEFISH_PROMPT_DEFAULT_SUFFIX</code></td>
+<td>Suffix after Node.js section</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>SPACEFISH_NODE_SYMBOL</code></td>
+<td style="text-align:center"><code>&#x2B22;&#xB7;</code></td>
+<td>Character to be shown before Node.js version</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>SPACEFISH_NODE_DEFAULT_VERSION</code></td>
+<td style="text-align:center"><code> </code></td>
+<td>Node.js version to be treated as default</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>SPACEFISH_NODE_COLOR</code></td>
+<td style="text-align:center"><code>green</code></td>
+<td>Color of Node.js section</td>
+</tr>
+</tbody>
+</table>
 <h3 id="battery-battery">Battery (<code>battery</code>)</h3>
 <p>By default, Battery section is shown only if battery level is below <code>SPACEFISH_BATTERY_THRESHOLD</code> (default: 10%).</p>
 <table>
@@ -715,7 +772,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Options","level":"1.2","depth":1,"next":{"title":"Order","level":"1.2.1","depth":2,"anchor":"#order","path":"docs/Options.md","ref":"./docs/Options.md#order","articles":[]},"previous":{"title":"Home","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["edit-link","github","github-buttons","anchorjs"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github":{"url":"https://github.com/matchai/spacefish/"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"github-buttons":{"buttons":[{"user":"matchai","repo":"spacefish","type":"star","size":"small","count":true}]},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/matchai/spacefish/tree/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchorjs":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Spacefish","gitbook":"3.x.x"},"file":{"path":"docs/Options.md","mtime":"2018-03-07T00:19:07.922Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-03-07T00:20:19.200Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Options","level":"1.2","depth":1,"next":{"title":"Order","level":"1.2.1","depth":2,"anchor":"#order","path":"docs/Options.md","ref":"./docs/Options.md#order","articles":[]},"previous":{"title":"Home","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["edit-link","github","github-buttons","anchorjs"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github":{"url":"https://github.com/matchai/spacefish/"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"github-buttons":{"buttons":[{"user":"matchai","repo":"spacefish","type":"star","size":"small","count":true}]},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/matchai/spacefish/tree/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchorjs":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Spacefish","gitbook":"3.x.x"},"file":{"path":"docs/Options.md","mtime":"2018-03-11T01:49:21.143Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-03-11T01:50:23.702Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
