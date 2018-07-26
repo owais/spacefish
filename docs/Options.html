@@ -201,6 +201,19 @@
     
         <li class="chapter " data-level="1.2.5" data-path="Options.html">
             
+                <a href="Options.html#host-host">
+            
+                    
+                    Hostname (host)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="Options.html">
+            
                 <a href="Options.html#git-git">
             
                     
@@ -213,7 +226,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.2.5.1" data-path="Options.html">
+        <li class="chapter " data-level="1.2.6.1" data-path="Options.html">
             
                 <a href="Options.html#git-branch-gitbranch">
             
@@ -226,7 +239,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.5.2" data-path="Options.html">
+        <li class="chapter " data-level="1.2.6.2" data-path="Options.html">
             
                 <a href="Options.html#git-status-gitstatus">
             
@@ -244,7 +257,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.6" data-path="Options.html">
+        <li class="chapter " data-level="1.2.7" data-path="Options.html">
             
                 <a href="Options.html#package-version-package">
             
@@ -257,7 +270,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.7" data-path="Options.html">
+        <li class="chapter " data-level="1.2.8" data-path="Options.html">
             
                 <a href="Options.html#nodejs-node">
             
@@ -270,7 +283,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.8" data-path="Options.html">
+        <li class="chapter " data-level="1.2.9" data-path="Options.html">
             
                 <a href="Options.html#execution-time-exec_time">
             
@@ -283,7 +296,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.9" data-path="Options.html">
+        <li class="chapter " data-level="1.2.10" data-path="Options.html">
             
                 <a href="Options.html#battery-battery">
             
@@ -551,6 +564,49 @@
 <td style="text-align:left"><code>SPACEFISH_DIR_PREFIX</code></td>
 <td style="text-align:center"><code>in&#xB7;</code></td>
 <td>Prefix before current directory</td>
+</tr>
+</tbody>
+</table>
+<h3 id="hostname-host">Hostname (<code>host</code>)</h3>
+<p>Hostname should only be shown while you are connected to another machine using SSH, unless you change it using SPACEFISH_HOST_SHOW.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Variable</th>
+<th style="text-align:center">Default</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>SPACEFISH_HOST_SHOW</code></td>
+<td style="text-align:center"><code>true</code></td>
+<td>Show host section (true/false)</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>SPACEFISH_HOST_SHOW_FULL</code></td>
+<td style="text-align:center"><code>false</code></td>
+<td>Show full hostname section (true/false)</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>SPACEFISH_HOST_PREFIX</code></td>
+<td style="text-align:center"><code>at&#xB7;</code></td>
+<td>Prefix before the hostname</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>SPACEFISH_HOST_SUFFIX</code></td>
+<td style="text-align:center"><code>$SPACESHIP_PROMPT_DEFAULT_SUFFIX</code></td>
+<td>Suffix after the hostname</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>SPACEFISH_HOST_COLOR</code></td>
+<td style="text-align:center"><code>blue</code></td>
+<td>Color of the hostname</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>SPACEFISH_HOST_COLOR_SSH</code></td>
+<td style="text-align:center"><code>green</code></td>
+<td>Color of the hostname during SSH</td>
 </tr>
 </tbody>
 </table>
@@ -956,7 +1012,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Options","level":"1.2","depth":1,"next":{"title":"Order","level":"1.2.1","depth":2,"anchor":"#order","path":"docs/Options.md","ref":"./docs/Options.md#order","articles":[]},"previous":{"title":"Home","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["edit-link","github","github-buttons","anchorjs","ga"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github":{"url":"https://github.com/matchai/spacefish/"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"github-buttons":{"buttons":[{"user":"matchai","repo":"spacefish","type":"star","size":"small","count":true}]},"ga":{"configuration":"auto","token":"UA-71160903-2"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/matchai/spacefish/tree/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchorjs":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Spacefish","gitbook":"3.x.x"},"file":{"path":"docs/Options.md","mtime":"2018-07-26T02:41:32.372Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-07-26T02:42:44.761Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Options","level":"1.2","depth":1,"next":{"title":"Order","level":"1.2.1","depth":2,"anchor":"#order","path":"docs/Options.md","ref":"./docs/Options.md#order","articles":[]},"previous":{"title":"Home","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["edit-link","github","github-buttons","anchorjs","ga"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github":{"url":"https://github.com/matchai/spacefish/"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"github-buttons":{"buttons":[{"user":"matchai","repo":"spacefish","type":"star","size":"small","count":true}]},"ga":{"configuration":"auto","token":"UA-71160903-2"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/matchai/spacefish/tree/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchorjs":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Spacefish","gitbook":"3.x.x"},"file":{"path":"docs/Options.md","mtime":"2018-07-26T03:19:06.543Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-07-26T03:20:16.756Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
