@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Home · Spacefish</title>
+        <title>Contributing Guide · Spacefish</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -58,8 +58,10 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="docs/Options.html" />
+    <link rel="next" href="CONTRIBUTING.html" />
     
+    
+    <link rel="prev" href="docs/Options.html" />
     
 
     <style>
@@ -99,7 +101,7 @@
         
         
     
-        <li class="chapter active" data-level="1.1" data-path="./">
+        <li class="chapter " data-level="1.1" data-path="./">
             
                 <a href="./">
             
@@ -306,7 +308,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3" data-path="CONTRIBUTING.html">
+        <li class="chapter active" data-level="1.3" data-path="CONTRIBUTING.html">
             
                 <a href="CONTRIBUTING.html">
             
@@ -491,7 +493,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >Home</a>
+        <a href="." >Contributing Guide</a>
     </h1>
 </div>
 
@@ -506,85 +508,44 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <p><a href="https://github.com/matchai/spacefish" target="_blank">
-  <img alt="spacefish fish shell theme" src="images/banner.svg" width="100%">
-</a></p>
-<h1 id="&#x1F680;&#x1F41F;-spacefish">&#x1F680;&#x1F41F; Spacefish</h1>
-<p><a href="https://travis-ci.org/matchai/spacefish" target="_blank"><img src="https://img.shields.io/travis/matchai/spacefish.svg?logo=travis" alt="TravisCI"></a>
-<a href="https://ci.appveyor.com/project/matchai/spacefish" target="_blank"><img src="https://img.shields.io/appveyor/ci/matchai/spacefish/master.svg?logo=appveyor" alt="AppVeyor"></a>
-<a href="https://fishshell.com/" target="_blank"><img src="https://img.shields.io/badge/fish-2.7.1-blue.svg" alt="Fish Shell"></a></p>
-<blockquote>
-<p>A <a href="https://fishshell.com/" target="_blank">Fish Shell</a> prompt for Astronauts.</p>
-</blockquote>
-<p>Spacefish is a <a href="https://fishshell.com/" target="_blank">Fish Shell</a> port of <a href="https://github.com/denysdovhan/spaceship-prompt" target="_blank">Spaceship</a>; the minimalistic, powerful and extremely customizable <a href="http://zsh.org/" target="_blank">Zsh</a> prompt. It combines everything you may need for convenient work, without unnecessary complications, like a real spacefish.</p>
-<h2 id="features">Features</h2>
+                                <h1 id="contributing">Contributing</h1>
+<p>First of all, thank you for contributing. Any contribution is highly appreciated and welcome.</p>
+<h2 id="philosophy">Philosophy</h2>
+<p>There&apos;s a simple philosophy behind Spacefish:</p>
 <ul>
-<li>Clever hostname and username displaying.</li>
-<li>Indicator if user is root.</li>
-<li>Prompt character turns red if the last command exits with non-zero code.</li>
-<li>Execution time of the last command if it exceeds 5 seconds.</li>
-<li>Current Node.js version, through nvm/nodenv/node (<code>&#x2B22;</code>).</li>
-<li>Current Ruby version, through rvm/rbenv/chruby/asdf (<code>&#x1F48E;</code>).</li>
-<li>Package version, if there is a package in current directory (<code>&#x1F4E6;</code>).</li>
-<li>Current Git branch and rich repo status:<ul>
-<li><code>?</code> &#x2014; untracked changes;</li>
-<li><code>+</code> &#x2014; uncommitted changes in the index;</li>
-<li><code>!</code> &#x2014; unstaged changes;</li>
-<li><code>&#xBB;</code> &#x2014; renamed files;</li>
-<li><code>&#x2718;</code> &#x2014; deleted files;</li>
-<li><code>$</code> &#x2014; stashed changes;</li>
-<li><code>=</code> &#x2014; unmerged changes;</li>
-<li><code>&#x21E1;</code> &#x2014; ahead of remote branch;</li>
-<li><code>&#x21E3;</code> &#x2014; behind of remote branch;</li>
-<li><code>&#x21D5;</code> &#x2014; diverged chages.</li>
+<li><strong>Absolute parity with spaceship-prompt.</strong> The prompt should be identical to spaceship-prompt when it comes to visuals, functionality, and configuration.</li>
 </ul>
-</li>
-<li>Current battery level and status:<ul>
-<li><code>&#x21E1;</code> - charging;</li>
-<li><code>&#x21E3;</code> - discharging;</li>
-<li><code>&#x2022;</code> - fully charged.</li>
-</ul>
-</li>
-</ul>
-<h3 id="upcoming-features">Upcoming features</h3>
-<ul>
-<li>Indicator for jobs in the background (<code>&#x2726;</code>).</li>
-<li>Current Python pyenv (<code>&#x1F40D;</code>).</li>
-<li>Optional exit-code of last command.</li>
-<li>Optional time stamps 12/24hr in format.</li>
-</ul>
-<p>Want more features? Please <a href="https://github.com/matchai/spacefish/issues/new?template=Feature_request.md" target="_blank">open an issue</a> or send pull request!</p>
-<h2 id="preview">Preview</h2>
-<p align="center">
-  <img alt="Spaceship with Hyper and One Dark" src="images/preview.gif" width="980px">
-</p>
-
-<h2 id="requirements">Requirements</h2>
-<p>To get spacefish working correctly, you will need:</p>
-<ul>
-<li><a href="https://fishshell.com/" target="_blank"><code>fish</code></a> (v2.7.0 or newer)</li>
-<li><a href="https://github.com/powerline/fonts" target="_blank">Powerline Font</a> must be installed and enabled in your terminal.</li>
-</ul>
-<h2 id="installation">Installation</h2>
-<h3 id="fisherman"><a href="https://fisherman.github.io" target="_blank">Fisherman</a></h3>
-<pre><code class="lang-fish">$ fisher matchai/spacefish
+<h2 id="setup">Setup</h2>
+<ol>
+<li><strong>Fork</strong> this repo (click the <em>fork</em> button)</li>
+<li><strong>Clone</strong> your fork to your computer (via <code>git clone</code>)</li>
+<li><strong>Make your changes</strong>. Check our <a href="docs/API.html">API</a> for more information (we suggest you to check out a new branch for changes).</li>
+<li><strong>Test</strong> your code (via <code>npm test</code>)</li>
+<li><strong>Add and commit</strong> your contributions</li>
+<li><strong>Push</strong> your changes to your remote fork</li>
+<li><strong>Open a pull-request</strong> on the spacefish repo</li>
+</ol>
+<h2 id="testing">Testing</h2>
+<p>Unit tests are stored in the <code>./tests</code> directory, with the <code>(filename).test.fish</code> naming scheme.
+To run the unit tests, simply run:</p>
+<pre><code class="lang-sh">./tests/run.fish
 </code></pre>
-<h3 id="oh-my-fish"><a href="https://github.com/oh-my-fish/oh-my-fish" target="_blank">Oh My Fish!</a></h3>
-<pre><code class="lang-fish">$ omf install spacefish
-</code></pre>
-<h2 id="customization">Customization</h2>
-<p>Spacefish works really well out of the box, but you can customize your fish to your heart&apos;s content!</p>
+<p>The unit tests will create their own temporary fish environment, so your local fish and spacefish configuration will not affect the unit test run.</p>
+<h2 id="sections">Sections</h2>
+<p>Spacefish supports most of the popular programming languages, runtimes, version managers, etc. If it doesn&apos;t support something that you need, feel free to open a pull request over at Spaceship, and it will be a candidate to be added to Spacefish.</p>
+<h3 id="will-it-slow-down-the-prompt">Will it slow down the prompt?</h3>
+<p>Every additional section will slow down the prompt a little bit. If your section performs any expensive checks, find a way to make it faster.</p>
 <ul>
-<li><a href="docs/Options.html"><strong>Options</strong></a> &#x2014; Tweak section&apos;s behavior with tons of options.</li>
+<li><strong>Good:</strong> check if a command exists, check the value of an environment variable</li>
+<li><strong>Bad:</strong> network requests, reading large files, etc</li>
 </ul>
-<p>You have the ability to customize or disable specific elements of Spacefish. All options must be overridden in your <code>config.fish</code>.</p>
-<h2 id="troubleshooting">Troubleshooting</h2>
-<p>Having issues? Take a look at our <a href="docs/Troubleshooting.html">Troubleshooting</a> page.</p>
-<p>Still struggling? Please <a href="https://github.com/matchai/spacefish/issues/new?template=Support_question.md" target="_blank">file an issue</a>, describe your problem, and we will gladly help you.</p>
-<h2 id="license">License</h2>
-<p>MIT &#xA9; <a href="http://matchai.me" target="_blank">Matan Kushner</a></p>
-<!-- Badges -->
-<!-- Links -->
+<h3 id="documentation">Documentation</h3>
+<p>When updating documentation for your section, make sure the markdown document is being properly rendered by Github. Specifically, the following common pitfalls have already been discovered:</p>
+<ul>
+<li>Empty inline code blocks <code>` will only be rendered if you put at least one non-breaking whitespace &quot;&amp;nbsp;&quot; inside, like so: `` </code> <code>`` &#x2192;</code> `</li>
+<li>Leading and trailing whitespaces in inline code blocks will be stripped, to indicate that a whitespace is present, use the middot symbol <code>&#xB7;</code>, like so: <code>`&#x1F41F;&#xB7;` </code> &#x2192; <code>&#x1F41F;&#xB7;</code></li>
+</ul>
+<p><strong>Thank you for reading the contribution guide! Happy hacking!</strong></p>
 
                                 
                                 </section>
@@ -612,8 +573,12 @@
 
             
                 
+                <a href="docs/Options.html#battery-battery" class="navigation navigation-prev " aria-label="Previous page: Battery (battery)">
+                    <i class="fa fa-angle-left"></i>
+                </a>
                 
-                <a href="docs/Options.html" class="navigation navigation-next navigation-unique" aria-label="Next page: Options">
+                
+                <a href="CONTRIBUTING.html#philosophy" class="navigation navigation-next " aria-label="Next page: Philosophy">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -624,7 +589,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Home","level":"1.1","depth":1,"next":{"title":"Options","level":"1.2","depth":1,"path":"docs/Options.md","ref":"./docs/Options.md","articles":[{"title":"Order","level":"1.2.1","depth":2,"anchor":"#order","path":"docs/Options.md","ref":"./docs/Options.md#order","articles":[]},{"title":"Prompt","level":"1.2.2","depth":2,"anchor":"#prompt","path":"docs/Options.md","ref":"./docs/Options.md#prompt","articles":[]},{"title":"Char (char)","level":"1.2.3","depth":2,"anchor":"#char","path":"docs/Options.md","ref":"./docs/Options.md#char","articles":[]},{"title":"Username (user)","level":"1.2.4","depth":2,"anchor":"#username-user","path":"docs/Options.md","ref":"./docs/Options.md#username-user","articles":[]},{"title":"Directory (dir)","level":"1.2.5","depth":2,"anchor":"#directory-dir","path":"docs/Options.md","ref":"./docs/Options.md#directory-dir","articles":[]},{"title":"Hostname (host)","level":"1.2.6","depth":2,"anchor":"#host-host","path":"docs/Options.md","ref":"./docs/Options.md#host-host","articles":[]},{"title":"Git (git)","level":"1.2.7","depth":2,"anchor":"#git-git","path":"docs/Options.md","ref":"./docs/Options.md#git-git","articles":[{"title":"Git branch (git_branch)","level":"1.2.7.1","depth":3,"anchor":"#git-branch-gitbranch","path":"docs/Options.md","ref":"./docs/Options.md#git-branch-gitbranch","articles":[]},{"title":"Git status (git_status)","level":"1.2.7.2","depth":3,"anchor":"#git-status-gitstatus","path":"docs/Options.md","ref":"./docs/Options.md#git-status-gitstatus","articles":[]}]},{"title":"Package version (package)","level":"1.2.8","depth":2,"anchor":"#package-version-package","path":"docs/Options.md","ref":"./docs/Options.md#package-version-package","articles":[]},{"title":"Node (node)","level":"1.2.9","depth":2,"anchor":"#nodejs-node","path":"docs/Options.md","ref":"./docs/Options.md#nodejs-node","articles":[]},{"title":"Execution time (exec_time)","level":"1.2.10","depth":2,"anchor":"#execution-time-exec_time","path":"docs/Options.md","ref":"./docs/Options.md#execution-time-exec_time","articles":[]},{"title":"Battery (battery)","level":"1.2.11","depth":2,"anchor":"#battery-battery","path":"docs/Options.md","ref":"./docs/Options.md#battery-battery","articles":[]}]},"dir":"ltr"},"config":{"plugins":["edit-link","github","github-buttons","anchorjs","ga"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github":{"url":"https://github.com/matchai/spacefish/"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"github-buttons":{"buttons":[{"user":"matchai","repo":"spacefish","type":"star","size":"small","count":true}]},"ga":{"configuration":"auto","token":"UA-71160903-2"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/matchai/spacefish/tree/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchorjs":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Spacefish","gitbook":"3.x.x"},"file":{"path":"README.md","mtime":"2018-07-31T06:37:18.165Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-07-31T06:39:06.654Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Contributing Guide","level":"1.3","depth":1,"next":{"title":"Philosophy","level":"1.3.1","depth":2,"anchor":"#philosophy","path":"CONTRIBUTING.md","ref":"CONTRIBUTING.md#philosophy","articles":[]},"previous":{"title":"Battery (battery)","level":"1.2.11","depth":2,"anchor":"#battery-battery","path":"docs/Options.md","ref":"./docs/Options.md#battery-battery","articles":[]},"dir":"ltr"},"config":{"plugins":["edit-link","github","github-buttons","anchorjs","ga"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github":{"url":"https://github.com/matchai/spacefish/"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"github-buttons":{"buttons":[{"user":"matchai","repo":"spacefish","type":"star","size":"small","count":true}]},"ga":{"configuration":"auto","token":"UA-71160903-2"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/matchai/spacefish/tree/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchorjs":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Spacefish","gitbook":"3.x.x"},"file":{"path":"CONTRIBUTING.md","mtime":"2018-07-31T06:37:18.165Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-07-31T06:39:06.654Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
