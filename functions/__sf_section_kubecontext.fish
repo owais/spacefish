@@ -26,8 +26,8 @@ function __sf_section_kubecontext -d "Display the kubernetes context"
 	set -l _kube_context (kubectl config current-context ^/dev/null)
 	set -l _kube_ns (kubectl config view -o=jsonpath="{.contexts[?(@.name==\"$_kube_context\")].context.namespace}" ^/dev/null)
 
-	if [ $_kube_ns != "" ]
-		set _kube_context "$_kube_context:$_kube_ns"
+	if [ "$_kube_ns" != "" ]
+		set _kube_context "$_kube_context.$_kube_ns"
 	end
 
 	__sf_lib_section \
